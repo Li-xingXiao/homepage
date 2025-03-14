@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lixing Xiao</title>
+    <meta name="author" content="Jon Barron">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary-color: #007BFF;
+        --background-color: #f9f9f9;
+        --font-family: 'Poppins', sans-serif;
+        --text-color: #333;
+      }
+
+      body {
+        font-family: var(--font-family);
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      .name {
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0.8em;
+        letter-spacing: 0.05em;
+      }
+
+      p {
+        margin: 1em 0;
+        padding: 0 1.5em;
+        font-size: 1.1em;
+        text-indent: 2em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+        margin: 0.5em 0;
+        padding: 0 1.5em;
+        font-weight: 600;
+      }
+
+      table {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
+
+      td {
+        padding: 1.5em;
+        vertical-align: middle;
+      }
+
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: darken(var(--primary-color), 10%);
+        text-decoration: underline;
+      }
+
+      .papertitle {
+        font-weight: 600;
+        font-size: 1.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Lixing Xiao (肖力行)
+                </p>
+                <p>
+                  I am an incoming Master student at 3D Vision Group, Zhejiang University, supervised by <a href="https://pengsida.net/", target="_blank">Sida Peng</a> and <a href="https://www.xzhou.me/", target="_blank">Xiaowei Zhou</a>.
+                  Prior to joining ZJU, I earned my Bachelor of Engineering degree in Artificial Intelligence from Southeast University (SEU),
+                  where I cultivated a strong foundation in computational methods and intelligent systems.
+                </p>
+                <p style="text-align:center">
+                  <a href="https://lixingxiao0@gmail.com", target="_blank">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ", target="_blank">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Li-xingXiao", target="_blank">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/lixingxiao.jpg">
+                  <img style="width:100%;max-width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/lixingxiao.jpg" class="hoverZoomLink">
+                </a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in Computer Vision, Deep Learning and Generative AI.
+                  Currently, I'm working on 3D Human Motion Generation and Kinematic animation.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="power_stop()" onmouseover="power_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='power_image' style="margin-top: 20px;">
+            <video width="130%" height="auto" muted autoplay loop style="object-fit: cover;">
+              <source src="images/jump.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src='images/jump.png' width="130%" height="auto" style="object-fit: cover; margin-top: 20px;">
+        </div>
+        <script type="text/javascript">
+          function power_start() {
+            document.getElementById('power_image').style.opacity = "1";
+            document.querySelector('#power_image video').playbackRate = 1;
+          }
+
+          function power_stop() {
+            document.getElementById('power_image').style.opacity = "0";
+            document.querySelector('#power_image video').playbackRate = 1;
+          }
+          power_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://zju3dv.github.io/MotionStreamer/", target="_blank">
+			<span class="papertitle">MotionStreamer: Streaming Motion Generation via Diffusion-based Autoregressive Model in Causal Latent Space
+</span>
+        </a>
+        <br>
+				<strong>Lixing Xiao</strong>,
+        <a href="https://shunlinlu.github.io/", target="_blank">Shunlin Lu</a>,
+        <a href="https://phj128.github.io/", target="_blank">Huaijin Pi</a>,
+        <a href="https://vankouf.github.io/", target="_blank">Ke Fan</a>,
+        <a href="https://liangpan99.github.io/", target="_blank">Liang Pan</a>,
+        <a href="https://scholar.google.com/citations?user=EWC3UGYAAAAJ/", target="_blank">Yueer Zhou</a>,
+        <a href="https://dblp.org/pid/120/4362.html/", target="_blank">Ziyong Feng</a>,
+        <a href="https://www.xzhou.me/", target="_blank">Xiaowei Zhou</a>,
+        <a href="https://pengsida.net/", target="_blank">Sida Peng</a><sup>†</sup>,
+        <a href="https://wangjingbo1219.github.io/", target="_blank">Jingbo Wang</a>
+        <br>
+        <a href="", target="_blank">arXiv</a>, 2025        
+        <!-- <p>
+				A novel framework designed for <strong>Streaming Motion Generation</strong>, which enables <strong>incremental text input</strong> while preserving <strong>online output response</strong>.
+        </p> -->
+      </td>
+    </tr>
+
+
+  </tbody></table>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <h2>Open Source Project</h2>
+      </td>
+    </tr>
+  </tbody></table>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+<tr onmouseout="spin_stop()" onmouseover="spin_start()" bgcolor="#ffffd0">
+<td style="padding:16px;width:30%;vertical-align:middle">
+<div class="one">
+  <div class="two" id='power_image' style="margin-top: 20px;">
+    <video id="spin_video" width="130%" height="auto" muted loop style="object-fit: cover;" poster="images/spin_ik.png">
+      <source src="images/spin_ik.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <img src='images/spin_ik.png' width="130%" height="auto" style="object-fit: cover; margin-top: 20px;">
+</div>
+
+
+<script type="text/javascript">
+  function spin_start() {
+    document.getElementById('spin_video').play();
+  }
+
+  function spin_stop() {
+    document.getElementById('spin_video').pause();
+  }
+  spin_stop()
+</script>
+</td>
+<td style="padding:8px;width:80%;vertical-align:middle">
+<a href="https://github.com/Li-xingXiao/272-dim-Motion-Representation", target="_blank">
+<span class="papertitle">272-dim Motion Representation
+</span>
+</a>
+<br>
+This motion representation enables <strong>directly conversion from joint rotations to SMPL body parameters</strong>, removing the need of error-prone <strong>Inverse Kinematics (IK)</strong> operation.
+<br>
+<a href="https://github.com/Li-xingXiao/272-dim-Motion-Representation", target="_blank">Github</a>, 2025 
+</td>
+</tr>
+
+  
