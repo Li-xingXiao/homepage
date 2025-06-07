@@ -127,7 +127,6 @@
           <div class="two" id='power_image' style="margin-top: 20px;">
             <video width="130%" height="auto" muted autoplay loop style="object-fit: cover;">
               <source src="images/jump.mp4" type="video/mp4">
-              Your browser does not support the video tag.
             </video>
           </div>
           <img src='images/jump.png' width="130%" height="auto" style="object-fit: cover; margin-top: 20px;">
@@ -163,9 +162,58 @@
         <a href="https://wangjingbo1219.github.io/", target="_blank">Jingbo Wang</a>
         <br>
         <a href="https://arxiv.org/abs/2503.15451", target="_blank">arXiv</a>, 2025        
-        <!-- <p>
-				A novel framework designed for <strong>Streaming Motion Generation</strong>, which enables <strong>incremental text input</strong> while preserving <strong>online output response</strong>.
-        </p> -->
+      </td>
+    </tr>
+
+
+    <tr onmouseout="bilateral_stop()" onmouseover="bilateral_start()" bgcolor="#ffffff">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bilateral_image' style="margin-top: 20px; opacity: 0;">
+            <video width="130%" height="auto" muted loop style="object-fit: cover;">
+              <source src="images/bilateral.mov" type="video/mp4">
+            </video>
+          </div>
+          <img src='images/bilateral.jpg' width="130%" height="auto" style="object-fit: cover; margin-top: 20px;">
+        </div>
+        <script type="text/javascript">
+          function bilateral_start() {
+            document.getElementById('bilateral_image').style.opacity = "1";
+            const video = document.querySelector('#bilateral_image video');
+            video.currentTime = 0; 
+            video.play();
+          }
+
+          function bilateral_stop() {
+            document.getElementById('bilateral_image').style.opacity = "0";
+            const video = document.querySelector('#bilateral_image video');
+            video.pause();
+          }
+          bilateral_stop(); 
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://bigcileng.github.io/bilateral-driving/", target="_blank">
+			<span class="papertitle">Unifying Appearance Codes and Bilateral Grids for Driving Scene Gaussian Splatting
+</span>
+        </a>
+        <br>
+        <a href="https://bigcileng.github.io/", target="_blank">Nan Wang</a>,
+        <a href="https://tao-11-chen.github.io/", target="_blank">Yuantao Chen</a>,
+        <strong>Lixing Xiao</strong>,
+        <a href="https://scholar.google.com.hk/citations?user=v0iwkScAAAAJ", target="_blank">Weiqing Xiao</a>,
+        <a href="https://scholar.google.com/citations?user=V-YdQiAAAAAJ", target="_blank">Bohan Li</a>,
+        <a href="https://scholar.google.com/citations?user=HsV0WbwAAAAJ", target="_blank">Zhaoxi Chen</a>,
+        <a href="https://github.com/hugoycj", target="_blank">Chongjie Ye</a>,
+        <a href="https://daniellli.github.io/", target="_blank">Shaocong Xu</a>,
+        <a href="https://scholar.google.com.hk/citations?hl=en&user=P4efBMcAAAAJ", target="_blank">Saining Zhang</a><sup>†</sup>,
+        <a href="https://ziyangyan.github.io/", target="_blank">Ziyang Yan</a>,
+        <a href="https://scholar.google.com.hk/citations?hl=en&user=NMSccqAAAAAJ", target="_blank">Pierre Merriaux</a>,
+        <a href="https://github.com/Crescent-Saturn", target="_blank">Lei Lei</a>,
+        <a href="https://tianfan.info/", target="_blank">Tianfan Xue</a>,
+        <a href="https://sites.google.com/view/fromandto/", target="_blank">Hao Zhao</a><sup>†</sup>
+        <br>
+        <a href="https://www.arxiv.org/abs/2506.05280", target="_blank">arXiv</a>, 2025        
       </td>
     </tr>
 
@@ -187,7 +235,6 @@
   <div class="two" id='power_image' style="margin-top: 20px;">
     <video id="spin_video" width="130%" height="auto" muted loop style="object-fit: cover;" poster="images/spin_ik.png">
       <source src="images/spin_ik.mp4" type="video/mp4">
-      Your browser does not support the video tag.
     </video>
   </div>
   <img src='images/spin_ik.png' width="130%" height="auto" style="object-fit: cover; margin-top: 20px;">
