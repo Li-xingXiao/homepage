@@ -90,7 +90,7 @@
                   Lixing Xiao (肖力行)
                 </p>
                 <p>
-                  I am an incoming Master student at 3D Vision Group, Zhejiang University, supervised by <a href="https://pengsida.net/", target="_blank">Sida Peng</a> and <a href="https://www.xzhou.me/", target="_blank">Xiaowei Zhou</a>.
+                  I am a Master student at 3D Vision Group, Zhejiang University, supervised by <a href="https://pengsida.net/", target="_blank">Sida Peng</a> and <a href="https://www.xzhou.me/", target="_blank">Xiaowei Zhou</a>.
                   Prior to joining ZJU, I earned my Bachelor of Engineering degree in Artificial Intelligence from Southeast University (SEU),
                   where I cultivated a strong foundation in computational methods and intelligent systems.
                   I'm interested in Computer Vision, Deep Learning and Generative AI.
@@ -175,6 +175,54 @@
       </td>
     </tr>
 
+    
+    
+
+    <tr onmouseout="new_project_stop()" onmouseover="new_project_start()" bgcolor="#ffffff">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='new_project_image' style="margin-top: 20px; opacity: 0;">
+            <video width="130%" height="auto" muted autoplay loop style="object-fit: cover;">
+              <source src="images/motionmillion.mp4" type="video/mp4">
+            </video>
+          </div>
+          <img src='images/motionmillion_img.jpg' width="130%" height="auto" style="object-fit: cover; margin-top: 20px;">
+        </div>
+        <script type="text/javascript">
+          function new_project_start() {
+            document.getElementById('new_project_image').style.opacity = "1";
+            document.querySelector('#new_project_image video').playbackRate = 1;
+          }
+    
+          function new_project_stop() {
+            document.getElementById('new_project_image').style.opacity = "0";
+            document.querySelector('#new_project_image video').playbackRate = 1;
+          }
+          new_project_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://vankouf.github.io/MotionMillion/" target="_blank">
+          <span class="papertitle">Go to Zero: Towards Zero-shot Motion Generation with Million-scale Data
+    </span>
+        </a>
+        <br>
+        <a href="https://vankouf.github.io/" target="_blank">Ke Fan</a>,
+        <a href="https://shunlinlu.github.io/" target="_blank">Shunlin Lu</a>,
+        <a href="https://jixiii.github.io/" target="_blank">Minyue Dai</a>,
+        <a href="https://ingrid789.github.io/IngridYu/" target="_blank">Runyi Yu</a>,
+        <strong>Lixing Xiao</strong>,
+        <a href="https://frank-zy-dou.github.io/" target="_blank">Zhiyang Dou</a>,
+        <a href="https://jtdong.com/" target="_blank">Junting Dong</a>,
+        <a href="https://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=154" target="_blank">Lizhuang Ma</a>,
+        <a href="https://wangjingbo1219.github.io/" target="_blank">Jingbo Wang</a>
+        <br>
+        <strong style="color: #ff0000;">ICCV 2025</strong>
+        <br>
+        [<a href="https://arxiv.org/abs/2507.07095" target="_blank">Paper</a>] [<a href="https://vankouf.github.io/MotionMillion/" target="_blank">Project Page</a>] [<a href="https://github.com/VankouF/MotionMillion-Codes" target="_blank">Code</a>]
+      </td>
+    </tr>
+    
 
     
 
